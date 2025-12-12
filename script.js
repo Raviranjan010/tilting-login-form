@@ -1,12 +1,12 @@
 // -------- Floating Particles --------
 const particlesContainer = document.getElementById('particles');
-const particleCount = 30;
+const particleCount = 34;
 
 for (let i = 0; i < particleCount; i++) {
     const particle = document.createElement('div');
     particle.classList.add('particle');
 
-    const size = Math.random() * 6 + 2;
+    const size = Math.random() * 6 + 3;
     particle.style.width = `${size}px`;
     particle.style.height = `${size}px`;
 
@@ -17,7 +17,7 @@ for (let i = 0; i < particleCount; i++) {
     particle.style.left = `${Math.random() * 100}%`;
     particle.style.top = `${Math.random() * 100}%`;
 
-    const duration = Math.random() * 20 + 10;
+    const duration = Math.random() * 22 + 15;
     particle.style.animation = `float ${duration}s infinite linear`;
     particle.style.animationDelay = `${Math.random() * 5}s`;
 
